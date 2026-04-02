@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duda Grand Hotel</title>
+</head>
+
+<body>
+    <h1>Duda Grand Hotel</h1>
+    <script>
+        let convidados = parseInt(prompt("Digite o número de convidados:"));
+
+        if (convidados > 350) {
+            alert("Número de convidados inválido");
+        } else {
+
+            if (convidados <= 220) {
+
+                let cadeirasExtras = 0;
+
+                if (convidados > 150) {
+                    cadeirasExtras = convidados - 150;
+                }
+
+                alert("Use o Auditório Laranja");
+                alert("Cadeiras adicionais necessárias: " + cadeirasExtras);
+
+            } else {
+                alert("Use o Auditório Colorado");
+            }
+            let confirmar = prompt("Deseja confirmar a reserva? (sim/não)");
+            if (confirmar.toLowerCase() === "sim") {
+                alert("Reserva confirmada para " + convidados + " convidados.");
+            } else {
+                alert("Reserva cancelada.");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

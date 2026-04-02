@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duda Grand Hotel</title>
+</head>
+
+<body>
+    <h1>Duda Grand Hotel</h1>
+    <script>
+        let nome = prompt("Digite seu nome:");
+
+
+        let alcoolW = parseFloat(prompt("Álcool no Wayne Oil:"));
+        let gasolinaW = parseFloat(prompt("Gasolina no Wayne Oil:"));
+
+
+        let alcoolS = parseFloat(prompt("Álcool no Stark Petrol:"));
+        let gasolinaS = parseFloat(prompt("Gasolina no Stark Petrol:"));
+
+        let litros = 42;
+
+
+        let custoWayne;
+        let tipoWayne;
+
+        if (alcoolW <= gasolinaW * 0.7) {
+            custoWayne = alcoolW * litros;
+            tipoWayne = "álcool";
+        } else {
+            custoWayne = gasolinaW * litros;
+            tipoWayne = "gasolina";
+        }
+
+
+        let custoStark;
+        let tipoStark;
+
+        if (alcoolS <= gasolinaS * 0.7) {
+            custoStark = alcoolS * litros;
+            tipoStark = "álcool";
+        } else {
+            custoStark = gasolinaS * litros;
+            tipoStark = "gasolina";
+        }
+
+
+        if (custoWayne < custoStark) {
+            alert(nome + ", é mais barato abastecer com " + tipoWayne + " no posto Wayne Oil");
+        } else {
+            alert(nome + ", é mais barato abastecer com " + tipoStark + " no posto Stark Petrol");
+        }
+    </script>
+
+
+</body>
+
+</html>

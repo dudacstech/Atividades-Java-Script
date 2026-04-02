@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5 leitor de idade</title>
+</head>
+<body>
+    <script>
+     
+let idade = parseInt(prompt("Digite a sua idade:"));
+
+document.write("<h2>Resultado da Classe Eleitoral</h2>");
+document.write("<p>Idade informada: <b>" + idade + " anos</b></p>");
+
+
+if (idade < 16) {
+    document.write("<p>Classe: <b>Não eleitor</b></p>");
+} 
+else if ((idade >= 18) && (idade < 65)) {
+    document.write("<p>Classe: <b>Eleitor obrigatório</b></p>");
+} 
+else {
+    
+    document.write("<p>Classe: <b>Eleitor facultativo</b></p>");
+}
+    </script>
+</body>
+</html>

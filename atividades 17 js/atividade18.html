@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 18 identificar pessoa mais nova</title>
+</head>
+
+<body>
+    <script>
+
+        let nomeMaisNovo = "";
+        let idadeMaisNova = 999;
+        const totalPessoas = 10;
+
+        for (let i = 1; i <= totalPessoas; i++) {
+            let nome = prompt("Digite o nome da " + i + "ª pessoa:");
+            let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+
+
+            if (!isNaN(idade) && idade >= 0) {
+
+
+                if (idade < idadeMaisNova) {
+                    idadeMaisNova = idade;
+                    nomeMaisNovo = nome;
+                }
+
+            } else {
+                alert("Idade inválida. Por favor, tente novamente para esta pessoa.");
+                i--;
+            }
+        }
+
+
+        document.write("<h2>Resultado da Pesquisa</h2>");
+        document.write("<p>Total de pessoas analisadas: <b>" + totalPessoas + "</b></p>");
+        document.write("<hr>");
+
+        document.write("<p style='font-size: 1.2em;'>A pessoa mais nova do grupo é: <span style='color: darkgreen;'><b>" + nomeMaisNovo + "</b></span></p>");
+        document.write("<p>Idade: <b>" + idadeMaisNova + " anos</b></p>");
+    </script>
+</body>
+
+</html>

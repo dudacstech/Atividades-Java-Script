@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 23 programa leitor de números</title>
+</head>
+
+<body>
+    <script>
+
+        let faixa0a100 = 0;
+        let faixa101a200 = 0;
+        let faixaMaiores200 = 0;
+        const totalNumeros = 20;
+
+
+        for (let i = 1; i <= totalNumeros; i++) {
+            let numero = parseFloat(prompt("Digite o " + i + "º número:"));
+
+
+            if (!isNaN(numero)) {
+
+
+                if (numero >= 0 && numero <= 100) {
+                    faixa0a100++;
+                }
+                else if (numero >= 101 && numero <= 200) {
+                    faixa101a200++;
+                }
+                else if (numero > 200) {
+                    faixaMaiores200++;
+                }
+
+            } else {
+                alert("Por favor, digite um número válido.");
+                i--;
+            }
+        }
+
+
+        document.write("<h2>Relatório de Distribuição Numérica</h2>");
+        document.write("<p>Total de números processados: <b>" + totalNumeros + "</b></p>");
+        document.write("<hr>");
+
+        document.write("<p>Números entre <b>0 e 100</b>: <span style='color: blue;'><b>" + faixa0a100 + "</b></span></p>");
+        document.write("<p>Números entre <b>101 e 200</b>: <span style='color: green;'><b>" + faixa101a200 + "</b></span></p>");
+        document.write("<p>Números <b>maiores que 200</b>: <span style='color: red;'><b>" + faixaMaiores200 + "</b></span></p>");
+
+        document.write("<hr>");
+        document.write("<p>Números negativos ou fora das faixas: <b>" + (totalNumeros - (faixa0a100 + faixa101a200 + faixaMaiores200)) + "</b></p>");
+    </script>
+</body>
+
+</html>

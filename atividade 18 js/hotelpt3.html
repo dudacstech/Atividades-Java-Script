@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duda Grand Hotel</title>
+</head>
+
+<body>
+    <h1>Duda Grand Hotel</h1>
+    <script>
+        let hospedes = [];
+
+        function inicio() {
+            let opcao = parseInt(prompt(
+                "Menu:\n1 - Cadastrar\n2 - Pesquisar\n3 - Sair"
+            ));
+
+            switch (opcao) {
+                case 1:
+                    cadastrar();
+                    break;
+
+                case 2:
+                    pesquisar();
+                    break;
+
+                case 3:
+                    alert("Saindo do sistema...");
+                    break;
+
+                default:
+                    alert("Opção inválida!");
+                    inicio();
+            }
+        }
+
+        function cadastrar() {
+            if (hospedes.length >= 15) {
+                alert("Máximo de cadastros atingido");
+                inicio();
+                return;
+            }
+
+            let nome = prompt("Digite o nome do hóspede:");
+            hospedes.push(nome);
+            alert("Hóspede cadastrado!");
+            inicio();
+        }
+
+        function pesquisar() {
+            let nomeBusca = prompt("Digite o nome para buscar:");
+
+            let encontrado = false;
+
+            for (let i = 0; i < hospedes.length; i++) {
+                if (hospedes[i] === nomeBusca) {
+                    alert("Hospede " + nomeBusca + " foi encontrado");
+                    encontrado = true;
+                    break;
+                }
+            }
+
+            if (!encontrado) {
+                alert("Hospede não encontrado");
+            }
+
+            inicio();
+        }
+
+        inicio(); 
+    </script>
+
+</body>
+
+</html>

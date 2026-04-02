@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 20 numeros maiores que oito</title>
+</head>
+
+<body>
+    <script>
+
+        let contagemMaioresQueOito = 0;
+        const totalNumeros = 20;
+
+
+        for (let i = 1; i <= totalPessoas; i++) {
+            let numero = parseFloat(prompt("Digite o " + i + "º número:"));
+
+
+            if (!isNaN(numero)) {
+
+                if (numero > 8) {
+                    contagemMaioresQueOito++;
+                }
+            } else {
+                alert("Por favor, digite um número válido.");
+                i--;
+            }
+        }
+
+
+        document.write("<h2>Análise de Números</h2>");
+        document.write("<p>Total de números analisados: <b>" + totalNumeros + "</b></p>");
+
+        document.write("<hr>");
+
+        document.write("<p style='font-size: 1.2em;'>Quantidade de números <b>maiores que 8</b>: <span style='color: darkblue;'><b>" + contagemMaioresQueOito + "</b></span></p>");
+        document.write("<p>Quantidade de números <b>menores ou iguais a 8</b>: <b>" + (totalNumeros - contagemMaioresQueOito) + "</b></p>");
+    </script>
+</body>
+
+</html>

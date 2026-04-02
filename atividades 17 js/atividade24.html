@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 24 programa leitor de sequência</title>
+</head>
+
+<body>
+    <script>
+
+        let somaTotal = 0;
+        let numeroInformado = 0;
+
+        document.write("<h2>Soma de Sequência Numérica</h2>");
+        document.write("<p>O programa somará todos os números positivos. Para encerrar, digite qualquer <b>número negativo</b>.</p>");
+        document.write("<hr>");
+
+        while (true) {
+            numeroInformado = parseFloat(prompt("Digite um número (negativo para sair):"));
+
+
+            if (numeroInformado < 0) {
+                break;
+            }
+
+
+            if (!isNaN(numeroInformado)) {
+                somaTotal += numeroInformado;
+            } else {
+                alert("Por favor, digite um número válido.");
+            }
+        }
+
+
+        document.write("<p style='font-size: 1.3em;'>A soma total dos números digitados é: <span style='color: darkblue;'><b>" + somaTotal + "</b></span></p>");
+        document.write("<p>Execução encerrada pelo usuário.</p>");
+    </script>
+</body>
+
+</html>

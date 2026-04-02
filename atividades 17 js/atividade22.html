@@ -1,0 +1,41 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 22 números entre zero a cem</title>
+</head>
+
+<body>
+    <script>
+
+        let contagemNoIntervalo = 0;
+        const totalNumeros = 20;
+
+
+        for (let i = 1; i <= totalNumeros; i++) {
+            let numero = parseFloat(prompt("Digite o " + i + "º número:"));
+
+            if (!isNaN(numero)) {
+
+                if (numero >= 0 && numero <= 100) {
+                    contagemNoIntervalo++;
+                }
+            } else {
+                alert("Por favor, digite um número válido.");
+                i--;
+            }
+        }
+
+
+        document.write("<h2>Análise de Intervalo (0 a 100)</h2>");
+        document.write("<p>Total de números processados: <b>" + totalNumeros + "</b></p>");
+
+        document.write("<hr>");
+
+        document.write("<p style='font-size: 1.2em;'>Números que estão <b>entre 0 e 100</b>: <span style='color: darkgreen;'><b>" + contagemNoIntervalo + "</b></span></p>");
+        document.write("<p style='font-size: 1.1em;'>Números <b>fora</b> desse intervalo: <b>" + (totalNumeros - contagemNoIntervalo) + "</b></p>");
+    </script>
+</body>
+
+</html>

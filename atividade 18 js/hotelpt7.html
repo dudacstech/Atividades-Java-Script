@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duda Grand Hotel</title>
+</head>
+
+<body>
+    <h1>Duda Grand Hotel</h1>
+    <script>
+        let dia = prompt("Digite o dia do seu evento:").toLowerCase();
+        let horario = parseInt(prompt("Digite o horário do seu evento:"));
+
+        switch (dia) {
+
+
+            case "segunda":
+            case "terca":
+            case "quarta":
+            case "quinta":
+            case "sexta":
+
+                if (horario >= 7 && horario <= 23) {
+                    let empresa = prompt("Digite o nome da empresa");
+                    alert("Restaurante reservado para " + empresa + ": " + dia + " às " + horario + "hs");
+                } else {
+                    alert("Restaurante indisponível");
+                }
+                break;
+
+
+            case "sabado":
+            case "domingo":
+
+                if (horario >= 7 && horario <= 15) {
+                    let empresa = prompt("Digite o nome da empresa");
+                    alert("Restaurante reservado para " + empresa + ": " + dia + " às " + horario + "hs");
+                } else {
+                    alert("Restaurante indisponível");
+                }
+                break;
+
+
+            default:
+                alert("Dia inválido");
+        }
+
+    </script>
+</body>
+
+</html>

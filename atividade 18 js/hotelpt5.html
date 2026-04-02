@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duda Grand Hotel</title>
+</head>
+
+<body>
+    <h1>Duda Grand Hotel</h1>
+    <script>
+        let nome = prompt("digite o nome  do cliente")
+        let convidados = parseInt(prompt("Digite a quantidade de convidados:"));
+
+        if (convidados > 350) {
+            alert("Quantidade de convidados superior à capacidade máxima");
+        } else if (convidados <= 0 || isNaN(convidados)) {
+            alert("Valor inválido");
+        } else {
+
+
+            let agua = parseFloat(prompt("Digite a quantidade de litros de água:"));
+            let cafe = parseFloat(prompt("Digite a quantidade de litros de café:"));
+            let salgados = parseInt(prompt("Digite a quantidade de salgados:"));
+
+            let custoAgua = agua * 0.40;
+            let custoCafe = cafe * 0.80;
+            let custoSalgados = (salgados / 100) * 34;
+
+            let total = custoAgua + custoCafe + custoSalgados;
+
+
+            alert("Água: " + agua + " L");
+            alert("Café: " + cafe + " L");
+            alert("Salgados: " + salgados + " unidades");
+            alert("Custo total: R$ " + total.toFixed(2));
+
+
+            let confirmar = prompt("Deseja confirmar? (SIM/NÃO)");
+
+            if (confirmar.toUpperCase() === "SIM") {
+                alert(nome + ", reserva efetuada com sucesso");
+            } else {
+                alert("Reserva não efetuada.");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

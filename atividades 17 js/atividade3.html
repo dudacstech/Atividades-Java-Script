@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 CEF</title>
+</head>
+
+<body>
+    <h1> Testando comandos if - else id - else </h1>
+
+    <script>
+        let saldomedio = parseFloat(prompt("Digite seu saldo médio: "));
+        let valorcredito = 0
+
+
+        document.write("O seu saldo médio é: " + saldomedio)
+        document.write("<br> Seu valor em crédito é: " + valorcredito)
+
+
+        if (saldomedio <= 500) {
+            valorcredito = 0
+            document.write("<br> O crédito é de valor:" + valorcredito);
+
+        } else if (saldomedio > 501 && saldomedio <= 1000) {
+            valorcredito = saldomedio * 0.30
+            document.write("<br> O crédito é de valor:" + valorcredito);
+
+        } else if (saldomedio > 1001 && saldomedio <= 3000) {
+            valorcredito = saldomedio * 0.40
+            document.write("<br> O crédito é de valor:" + valorcredito);
+
+        } else if (saldomedio > 3001) {
+            valorcredito = saldomedio * 0.50
+            alert("valorcredito" + valorcredito)
+            document.write("<br>valorcredito" + valorcredito)
+
+        } else {
+            alert("Valor inválido")
+            document.write("<br> Valor inválido:")
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

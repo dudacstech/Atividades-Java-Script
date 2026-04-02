@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duda Grand Hotel</title>
+</head>
+
+<body>
+    <h1>Duda Grand Hotel</h1>
+    <script>
+        let menorValor = Infinity;
+        let melhorEmpresa = "";
+
+        function calcular() {
+            let nome = prompt("Qual o nome da empresa?");
+            let valor = parseFloat(prompt("Qual o valor por aparelho?"));
+            let quantidade = parseInt(prompt("Qual a quantidade de aparelhos?"));
+            let desconto = parseFloat(prompt("Qual a porcentagem de desconto?"));
+            let minimo = parseInt(prompt("Qual o número mínimo de aparelhos para desconto?"));
+
+
+            let total = valor * quantidade;
+
+
+            if (quantidade >= minimo) {
+                total = total - (total * (desconto / 100));
+            }
+
+            alert("O serviço de " + nome + " custará R$ " + total.toFixed(2));
+
+
+            if (total < menorValor) {
+                menorValor = total;
+                melhorEmpresa = nome;
+            }
+        }
+
+
+        while (true) {
+            calcular();
+
+            let continuar = prompt("Deseja informar novos dados? (Sim/Nao)");
+
+            if (continuar.toUpperCase() === "NAO") {
+                break;
+            }
+        }
+
+
+        alert("O orçamento de menor valor é o de " + melhorEmpresa + " por R$ " + menorValor.toFixed(2));
+    </script>
+    </script>
+</body>
+
+</html>

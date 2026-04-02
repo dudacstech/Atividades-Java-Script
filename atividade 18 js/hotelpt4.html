@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duda Grand Hotel</title>
+</head>
+
+<body>
+    <h1>Duda Grand Hotel</h1>
+    <script>
+        let garcon = parseFloat(prompt("digite a quantidade de garçons "))
+        let horas = parseFloat(prompt("digite a quantidade de horas do evento "))
+
+        let custo = garcon * horas * 10.5
+        alert("O custo total do evento é: R$ " + custo.toFixed(2))
+
+        let confirmar = prompt("Deseja confirmar ? (sim/não)")
+        if (confirmar.toLowerCase() === "sim") {
+            alert("Reserva confirmada O custo total é: R$ " + custo.toFixed(2))
+        } else {
+            alert("Reserva cancelada.")
+        }
+    </script>\
+
+</body>
+
+</html>

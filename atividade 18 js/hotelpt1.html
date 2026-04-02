@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duda Grand Hotel</title>
+</head>
+
+<body>
+
+
+    <h1>hotel</h1>
+    <script>
+        let nomeDoHotel = "Duda Grand Hotel"
+        document.write(" <br> qual é o nome do hotel ? :" + nomeDoHotel)
+
+        let nomeDoCliente = prompt("qual e o seu nome ?")
+        let senhaDoCliente = prompt("qual e a sua senha ?")
+
+        if (senhaDoCliente === "2678") {
+            alert("seja bem vindo ao  " + nomeDoHotel + ", " + nomeDoCliente + " É um grande prazer ter você conosco!")
+            inicio();
+        }
+        else {
+            alert("senha incorreta, tente novamente")
+
+
+        }
+        function inicio() {
+            let opcao = parseFloat(prompt("escolha uma opção: 1- reservar quarto, 2-sair"))
+
+            switch (opcao) {
+                case 1:
+                    fazerReserva("quarto reservado com sucesso!")
+                    break
+                case 2:
+                    alert("obrigado por visitar o " + nomeDoHotel + ", volte sempre!")
+                    break
+                default:
+                    alert("opção invalida, tente novamente")
+                    inicio()
+            }
+
+        }
+        function fazerReserva() {
+            let diarias = parseFloat(prompt(" o valor da diaria"))
+            let dias = parseFloat(prompt("quantos dias voce deseja ficar ?"))
+
+            if (diarias > 0 && dias > 0) {
+                let valorTotal = diarias * dias
+                alert("o valor total da sua reserva é:R$ " + valorTotal.toFixed(2))
+
+                let hospede = prompt("qual é o nome do hospede ?")
+                document.write(" <br> o nome do hospede é :" + hospede)
+
+                let confirmar = prompt(" " + hospede + " deseja confirmar a reserva ? (sim ou nao)")
+                if (confirmar.toLowerCase() === "sim") {
+                    alert(" " + hospede + ", sua reserva foi confirmada! obrigado por escolher o " + nomeDoHotel)
+
+                } else {
+                    alert("reserva cancelada! ")
+
+
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

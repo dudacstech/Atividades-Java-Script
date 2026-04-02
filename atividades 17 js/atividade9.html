@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9 leitor de o salário mínimo</title>
+</head>
+<body>
+    <script>
+       
+const SALARIO_MINIMO = 1212.00;
+
+
+let salarioUsuario = parseFloat(prompt("Digite o valor do seu salário (R$):"));
+
+
+let quantidadeSalarios = salarioUsuario / SALARIO_MINIMO;
+
+
+document.write("<h2>Cálculo de Salários Mínimos</h2>");
+document.write("<p>Valor do Salário Mínimo de referência: <b>R$ " + SALARIO_MINIMO.toFixed(2).replace('.', ',') + "</b></p>");
+document.write("<p>Seu salário informado: <b>R$ " + salarioUsuario.toFixed(2).replace('.', ',') + "</b></p>");
+
+document.write("<hr>");
+
+document.write("<p>Você ganha aproximadamente <b>" + quantidadeSalarios.toFixed(2) + "</b> salários mínimos.</p>");
+    </script>
+</body>
+</html>

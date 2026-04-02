@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerício 14 leitor de números do usuário</title>
+</head>
+
+<body>
+    <script>
+
+        let somaTotal = 0;
+
+
+        for (let i = 1; i <= 10; i++) {
+
+            let numeroInformado = parseFloat(prompt("Digite o " + i + "º número:"));
+
+
+            if (!isNaN(numeroInformado)) {
+                somaTotal += numeroInformado;
+            } else {
+                alert("Valor inválido! Por favor, digite apenas números.");
+                i--;
+            }
+        }
+
+
+        document.write("<h2>Soma de 10 Números</h2>");
+        document.write("<hr>");
+        document.write("<p>A soma total dos números informados é: <span style='font-size: 1.5em; color: green;'><b>" + somaTotal + "</b></span></p>");
+    </script>
+</body>
+
+</html>
