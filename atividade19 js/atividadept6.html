@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 19 pt 6</title>
+</head>
+
+<body>
+    <script>
+        var aprovados = 0;
+        var totalAlunos = 0;
+        var continuar = "S";
+
+        while (continuar === "S") {
+            var nota1 = parseFloat(prompt("Digite a Nota 1 do aluno:"));
+            var nota2 = parseFloat(prompt("Digite a Nota 2 do aluno:"));
+
+            var media = (nota1 + nota2) / 2;
+            totalAlunos++;
+
+            var situacao = "";
+
+            if (media >= 9.5) {
+                situacao = "APROVADO";
+                aprovados++;
+            } else {
+                situacao = "REPROVADO";
+            }
+
+            alert("Nota 1: " + nota1 + "\nNota 2: " + nota2 + "\nMédia Final: " + media + "\nSituação: " + situacao);
+
+            continuar = prompt("Calcular a média de outro aluno? Sim/Não? (S/N)");
+            continuar = continuar.toUpperCase();
+        }
+
+        alert("Programa encerrado!\nTotal de alunos: " + totalAlunos + "\nTotal de aprovados: " + aprovados + "\nTotal de reprovados: " + (totalAlunos - aprovados));
+    </script>
+
+</body>
+
+</html>

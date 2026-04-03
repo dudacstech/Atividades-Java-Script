@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 19 pt 1</title>
+</head>
+<script>
+    var valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+
+    var valor2;
+    do {
+        valor2 = parseFloat(prompt("Digite o segundo valor (deve ser maior que zero):"));
+        if (valor2 <= 0) {
+            alert("Valor inválido! O segundo valor não pode ser zero ou negativo. Tente novamente.");
+        }
+    } while (valor2 <= 0);
+
+    var resultado = valor1 / valor2;
+
+    alert("Resultado da divisão: " + valor1 + " / " + valor2 + " = " + resultado);
+</script>
+</body>
+
+</html>

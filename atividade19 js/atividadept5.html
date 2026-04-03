@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 19 pt 5</title>
+</head>
+
+<body>
+    <script>
+        var num1 = parseInt(prompt("Digite o primeiro número (menor):"));
+        var num2 = parseInt(prompt("Digite o segundo número (maior):"));
+
+        do {
+            if (num1 >= num2) {
+                alert("O primeiro número deve ser menor que o segundo. Tente novamente.");
+                num1 = parseInt(prompt("Digite o primeiro número (menor):"));
+                num2 = parseInt(prompt("Digite o segundo número (maior):"));
+            }
+        } while (num1 >= num2);
+
+        var soma = 0;
+        var quantidade = 0;
+
+        for (var i = num1; i <= num2; i++) {
+            soma = soma + i;
+            quantidade = quantidade + 1;
+        }
+
+        function calcularMedia(soma, quantidade) {
+            return soma / quantidade;
+        }
+
+        var media = calcularMedia(soma, quantidade);
+
+        // While usando num1 diretamente como contador
+        var mensagem = "Números considerados: ";
+
+        while (num1 <= num2) {
+            if (num1 < num2) {
+                mensagem = mensagem + num1 + ", ";
+            } else {
+                mensagem = mensagem + num1;
+            }
+            num1++;
+        }
+
+        alert(mensagem + "\n\nSoma: " + soma + "\nQuantidade de números: " + quantidade + "\nMédia Aritmética: " + media);
+
+        document.write("<h2>Resultado</h2>");
+        document.write("<p>" + mensagem + "</p>");
+        document.write("<p>Soma: " + soma + "</p>");
+        document.write("<p>Quantidade de números: " + quantidade + "</p>");
+        document.write("<p><strong>Média Aritmética: " + media + "</strong></p>");
+    </script>
+</body>
+
+</html>
