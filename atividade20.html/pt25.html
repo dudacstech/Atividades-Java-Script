@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      let i = 1,
+        a = 0,
+        b = 1;
+
+      do {
+        document.write(a + "<br>");
+        let t = a + b;
+        a = b;
+        b = t;
+        i++;
+      } while (i <= 20);
+    </script>
+  </body>
+</html>

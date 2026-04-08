@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      let num = parseInt(prompt("Digite um número:"));
+
+      do {
+        document.write((num % 10) + "<br>");
+        num = Math.floor(num / 10);
+      } while (num > 0);
+    </script>
+  </body>
+</html>

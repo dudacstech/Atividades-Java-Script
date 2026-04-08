@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      let soma = 0,
+        cont = 0;
+      let nome = prompt("Digite o nome:");
+
+      while (nome != "fim") {
+        let idade = parseInt(prompt("Digite a idade:"));
+        soma += idade;
+        cont++;
+        nome = prompt("Digite o nome:");
+      }
+
+      document.write("Média: " + soma / cont);
+    </script>
+  </body>
+</html>

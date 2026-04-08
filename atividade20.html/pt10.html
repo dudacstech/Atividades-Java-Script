@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fibonacci - 20 primeiros</title>
+  </head>
+  <body>
+    <h1>20 primeiros números da sequência de Fibonacci</h1>
+    <div id="resultado"></div>
+
+    <script>
+      let contador = 1;
+      let a = 0;
+      let b = 1;
+      let resultado = document.getElementById("resultado");
+
+      while (contador <= 20) {
+        resultado.innerHTML += a + "<br>";
+
+        let proximo = a + b;
+        a = b;
+        b = proximo;
+
+        contador++;
+      }
+    </script>
+  </body>
+</html>

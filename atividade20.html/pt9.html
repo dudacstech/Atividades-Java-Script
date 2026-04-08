@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Média de Idades</title>
+  </head>
+  <body>
+    <h1>Média das idades</h1>
+    <div id="resultado"></div>
+
+    <script>
+      let contador = 1;
+      let somaIdades = 0;
+
+      while (contador <= 5) {
+        let nome = prompt("Digite o nome da " + contador + "ª pessoa:");
+        let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+
+        somaIdades += idade;
+        contador++;
+      }
+
+      let media = somaIdades / 5;
+
+      document.getElementById("resultado").innerHTML =
+        "Média das idades: " + media;
+    </script>
+  </body>
+</html>

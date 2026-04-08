@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabuada</title>
+  </head>
+  <body>
+    <h1>Tabuada</h1>
+    <div id="resultado"></div>
+
+    <script>
+      let numero = parseInt(prompt("Digite um número inteiro:"));
+      let contador = 1;
+      let resultado = document.getElementById("resultado");
+
+      while (contador <= 10) {
+        resultado.innerHTML +=
+          numero + " x " + contador + " = " + numero * contador + "<br>";
+        contador++;
+      }
+    </script>
+  </body>
+</html>

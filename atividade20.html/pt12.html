@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Números Ímpares</title>
+  </head>
+  <body>
+    <h1>Números ímpares de 1 a 50</h1>
+    <div id="resultado"></div>
+
+    <script>
+      let numero = 1;
+      let resultado = document.getElementById("resultado");
+
+      while (numero <= 50) {
+        if (numero % 2 !== 0) {
+          resultado.innerHTML += numero + "<br>";
+        }
+        numero++;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      let soma = 0,
+        cont = 0;
+
+      for (;;) {
+        let nome = prompt("Nome:");
+
+        if (nome == "fim") {
+          break;
+        }
+
+        soma += parseInt(prompt("Idade:"));
+        cont++;
+      }
+
+      document.write("Média: " + soma / cont);
+    </script>
+  </body>
+</html>

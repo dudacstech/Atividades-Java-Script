@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      let num = parseInt(prompt("Digite um número:"));
+      let primo = true;
+
+      for (let i = 2; i < num; i++) {
+        if (num % i == 0) {
+          primo = false;
+        }
+      }
+
+      document.write(primo ? "Primo" : "Não primo");
+    </script>
+  </body>
+</html>

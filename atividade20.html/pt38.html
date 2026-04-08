@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      let limite = parseInt(prompt("Digite um número:"));
+      let a = 0,
+        b = 1;
+
+      for (; a <= limite; ) {
+        document.write(a + "<br>");
+        let temp = a + b;
+        a = b;
+        b = temp;
+      }
+    </script>
+  </body>
+</html>

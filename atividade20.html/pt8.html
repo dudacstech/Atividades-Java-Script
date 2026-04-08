@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fibonacci</title>
+  </head>
+  <body>
+    <h1>Sequência de Fibonacci</h1>
+    <div id="resultado"></div>
+
+    <script>
+      let limite = parseInt(prompt("Digite um número inteiro:"));
+      let a = 0;
+      let b = 1;
+      let resultado = document.getElementById("resultado");
+
+      while (a <= limite) {
+        resultado.innerHTML += a + "<br>";
+
+        let proximo = a + b;
+        a = b;
+        b = proximo;
+      }
+    </script>
+  </body>
+</html>
