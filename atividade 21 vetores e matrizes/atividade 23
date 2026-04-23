@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex23</title>
+  </head>
+  <body>
+    <script>
+      let menor = Infinity;
+
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+          let n = parseInt(prompt("Digite:"));
+          if (n < menor) {
+            menor = n;
+          }
+        }
+      }
+
+      document.write("Menor valor: " + menor);
+    </script>
+  </body>
+</html>

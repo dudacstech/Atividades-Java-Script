@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex17</title>
+  </head>
+  <body>
+    <script>
+      let soma = 0;
+      let m = [];
+
+      for (let i = 0; i < 2; i++) {
+        m[i] = [];
+        for (let j = 0; j < 2; j++) {
+          m[i][j] = parseInt(prompt("Digite um número:"));
+          soma += m[i][j];
+        }
+      }
+
+      document.write("Soma total: " + soma);
+    </script>
+  </body>
+</html>

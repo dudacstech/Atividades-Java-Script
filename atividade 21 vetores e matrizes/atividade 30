@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex30</title>
+  </head>
+  <body>
+    <script>
+      let c = [];
+
+      for (let i = 0; i < 2; i++) {
+        c[i] = [];
+        for (let j = 0; j < 2; j++) {
+          let a = parseInt(prompt("Matriz A:"));
+          let b = parseInt(prompt("Matriz B:"));
+          c[i][j] = a - b;
+        }
+      }
+
+      document.write("Resultado:<br>");
+      for (let i = 0; i < 2; i++) {
+        document.write(c[i][0] + " " + c[i][1] + "<br>");
+      }
+    </script>
+  </body>
+</html>

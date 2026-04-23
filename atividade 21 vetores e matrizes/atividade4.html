@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex04</title>
+  </head>
+  <body>
+    <script>
+      let v = [];
+      let pares = 0;
+
+      for (let i = 0; i < 5; i++) {
+        v[i] = parseInt(prompt("Digite um número:"));
+        if (v[i] % 2 === 0) {
+          pares++;
+        }
+      }
+
+      document.write("Quantidade de números pares: " + pares);
+    </script>
+  </body>
+</html>

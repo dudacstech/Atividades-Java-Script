@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex10</title>
+  </head>
+  <body>
+    <script>
+      let v = [];
+      let temZero = false;
+
+      for (let i = 0; i < 5; i++) {
+        v[i] = parseInt(prompt("Digite um número:"));
+        if (v[i] === 0) {
+          temZero = true;
+        }
+      }
+
+      if (temZero) {
+        document.write("Existe pelo menos um zero");
+      } else {
+        document.write("Não existe zero");
+      }
+    </script>
+  </body>
+</html>

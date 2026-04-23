@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex06</title>
+</head>
+<body>
+
+<script>
+let v = [];
+
+for (let i = 0; i < 10; i++) {
+  v[i] = parseInt(prompt("Digite um número:"));
+}
+
+v.sort(function(a, b) {
+  return a - b;
+});
+
+document.write("Ordem crescente:<br>");
+for (let i = 0; i < 10; i++) {
+  document.write(v[i] + "<br>");
+}
+</script>
+
+</body>
+</html>

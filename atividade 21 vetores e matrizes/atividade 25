@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex25</title>
+  </head>
+  <body>
+    <script>
+      let m = [];
+
+      for (let i = 0; i < 4; i++) {
+        m[i] = [];
+        for (let j = 0; j < 4; j++) {
+          m[i][j] = parseInt(prompt("Digite:"));
+        }
+      }
+
+      for (let j = 0; j < 4; j++) {
+        let soma = 0;
+        for (let i = 0; i < 4; i++) {
+          soma += m[i][j];
+        }
+        document.write("Coluna " + j + ": " + soma + "<br>");
+      }
+    </script>
+  </body>
+</html>

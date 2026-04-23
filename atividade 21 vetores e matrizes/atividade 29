@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex29</title>
+  </head>
+  <body>
+    <script>
+      let identidade = true;
+
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+          let n = parseInt(prompt("Digite:"));
+
+          if ((i === j && n !== 1) || (i !== j && n !== 0)) {
+            identidade = false;
+          }
+        }
+      }
+
+      document.write(identidade ? "É matriz identidade" : "Não é identidade");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex11</title>
+  </head>
+  <body>
+    <script>
+      let somaPos = 0;
+      let somaNeg = 0;
+
+      for (let i = 0; i < 10; i++) {
+        let n = parseInt(prompt("Digite um número:"));
+
+        if (n >= 0) {
+          somaPos += n;
+        } else {
+          somaNeg += n;
+        }
+      }
+
+      document.write("Soma positivos: " + somaPos + "<br>");
+      document.write("Soma negativos: " + somaNeg);
+    </script>
+  </body>
+</html>

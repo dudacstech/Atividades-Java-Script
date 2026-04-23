@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex27</title>
+  </head>
+  <body>
+    <script>
+      let produto = 1;
+
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+          let n = parseInt(prompt("Digite:"));
+
+          if (i + j === 2) {
+            produto *= n;
+          }
+        }
+      }
+
+      document.write("Produto: " + produto);
+    </script>
+  </body>
+</html>

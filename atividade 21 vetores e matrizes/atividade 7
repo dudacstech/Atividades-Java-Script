@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex07</title>
+  </head>
+  <body>
+    <script>
+      let v = [];
+      let cont = 0;
+
+      for (let i = 0; i < 10; i++) {
+        v[i] = parseInt(prompt("Digite um número:"));
+        if (v[i] > 0) {
+          cont++;
+        }
+      }
+
+      document.write("Quantidade de positivos: " + cont);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex21</title>
+  </head>
+  <body>
+    <script>
+      let soma = 0;
+      let m = [];
+
+      for (let i = 0; i < 4; i++) {
+        m[i] = [];
+        for (let j = 0; j < 4; j++) {
+          m[i][j] = parseInt(prompt("Digite:"));
+          soma += m[i][j];
+        }
+      }
+
+      document.write("Média: " + soma / 16);
+    </script>
+  </body>
+</html>

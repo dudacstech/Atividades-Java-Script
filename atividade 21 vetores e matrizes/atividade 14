@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex14</title>
+  </head>
+  <body>
+    <script>
+      document.write("Números pares:<br>");
+
+      for (let i = 0; i < 7; i++) {
+        let n = parseInt(prompt("Digite um número:"));
+
+        if (n % 2 === 0) {
+          document.write(n + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

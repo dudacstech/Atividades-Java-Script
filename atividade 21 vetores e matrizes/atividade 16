@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex16</title>
+  </head>
+  <body>
+    <script>
+      let m = [];
+
+      for (let i = 0; i < 3; i++) {
+        m[i] = [];
+        for (let j = 0; j < 3; j++) {
+          m[i][j] = parseInt(prompt("Digite um número:"));
+        }
+      }
+
+      document.write("Matriz:<br>");
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+          document.write(m[i][j] + " ");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex12</title>
+  </head>
+  <body>
+    <script>
+      let v = [];
+
+      for (let i = 0; i < 5; i++) {
+        v[i] = parseInt(prompt("Digite um número:"));
+      }
+
+      v.sort(function (a, b) {
+        return b - a;
+      });
+
+      document.write("Ordem decrescente:<br>");
+      for (let i = 0; i < 5; i++) {
+        document.write(v[i] + "<br>");
+      }
+    </script>
+  </body>
+</html>

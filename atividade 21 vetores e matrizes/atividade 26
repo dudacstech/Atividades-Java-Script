@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex26</title>
+  </head>
+  <body>
+    <script>
+      let iguais = true;
+
+      for (let i = 0; i < 2; i++) {
+        for (let j = 0; j < 2; j++) {
+          let a = parseInt(prompt("Matriz A:"));
+          let b = parseInt(prompt("Matriz B:"));
+
+          if (a !== b) {
+            iguais = false;
+          }
+        }
+      }
+
+      document.write(iguais ? "Matrizes iguais" : "Matrizes diferentes");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex20</title>
+  </head>
+  <body>
+    <script>
+      let m = [];
+      let maior = -Infinity;
+
+      for (let i = 0; i < 3; i++) {
+        m[i] = [];
+        for (let j = 0; j < 3; j++) {
+          m[i][j] = parseInt(prompt("Digite:"));
+          if (m[i][j] > maior) {
+            maior = m[i][j];
+          }
+        }
+      }
+
+      document.write("Maior valor: " + maior);
+    </script>
+  </body>
+</html>

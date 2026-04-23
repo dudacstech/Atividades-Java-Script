@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex22</title>
+  </head>
+  <body>
+    <script>
+      let a = [],
+        b = [],
+        c = [];
+
+      for (let i = 0; i < 2; i++) {
+        a[i] = [];
+        b[i] = [];
+        c[i] = [];
+      }
+
+      for (let i = 0; i < 2; i++) {
+        for (let j = 0; j < 2; j++) {
+          a[i][j] = parseInt(prompt("Matriz A:"));
+        }
+      }
+
+      for (let i = 0; i < 2; i++) {
+        for (let j = 0; j < 2; j++) {
+          b[i][j] = parseInt(prompt("Matriz B:"));
+        }
+      }
+
+      for (let i = 0; i < 2; i++) {
+        for (let j = 0; j < 2; j++) {
+          c[i][j] = 0;
+          for (let k = 0; k < 2; k++) {
+            c[i][j] += a[i][k] * b[k][j];
+          }
+        }
+      }
+
+      document.write("Resultado:<br>");
+      for (let i = 0; i < 2; i++) {
+        document.write(c[i][0] + " " + c[i][1] + "<br>");
+      }
+    </script>
+  </body>
+</html>

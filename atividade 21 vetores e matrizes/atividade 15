@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex15</title>
+  </head>
+  <body>
+    <script>
+      let nomes = [];
+
+      for (let i = 0; i < 5; i++) {
+        nomes[i] = prompt("Digite um nome:");
+      }
+
+      nomes.sort();
+
+      document.write("Ordem alfabética:<br>");
+      for (let i = 0; i < 5; i++) {
+        document.write(nomes[i] + "<br>");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      let v = [],
+        soma = 0;
+
+      for (let i = 0; i < 7; i++) {
+        v[i] = parseInt(prompt("Digite um número:"));
+        soma += v[i];
+      }
+
+      document.write("Média: " + soma / 7);
+    </script>
+  </body>
+</html>

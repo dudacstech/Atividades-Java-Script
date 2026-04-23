@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex28</title>
+  </head>
+  <body>
+    <script>
+      let m = [];
+
+      for (let i = 0; i < 4; i++) {
+        m[i] = [];
+        let maior = -Infinity;
+
+        for (let j = 0; j < 4; j++) {
+          m[i][j] = parseInt(prompt("Digite:"));
+
+          if (m[i][j] > maior) {
+            maior = m[i][j];
+          }
+        }
+
+        document.write("Maior da linha " + i + ": " + maior + "<br>");
+      }
+    </script>
+  </body>
+</html>
